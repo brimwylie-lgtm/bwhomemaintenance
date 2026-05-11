@@ -158,6 +158,19 @@
       .pricing-grid{grid-template-columns:1fr;}
       .product-grid{grid-template-columns:1fr;}
     }
+
+    .service-area{padding:0 0 80px;}
+    .area-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start;}
+    .area-map{width:100%;border-radius:16px;box-shadow:0 4px 24px var(--shadow);display:block;}
+    .area-details{padding-top:8px;}
+    .boundary-list{list-style:none;margin:20px 0 24px;}
+    .boundary-list li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:.95rem;color:var(--slate);}
+    .boundary-list li:last-child{border-bottom:none;}
+    .boundary-dot{width:10px;height:10px;border-radius:50%;background:var(--green);flex-shrink:0;}
+    .boundary-list li strong{color:var(--navy);min-width:52px;display:inline-block;}
+    .outside-area-note{background:var(--white);border-radius:12px;padding:20px 24px;border-left:4px solid var(--green-lt);box-shadow:0 2px 12px var(--shadow);font-size:.9rem;color:var(--slate);line-height:1.65;}
+    .outside-area-note strong{color:var(--navy);display:block;margin-bottom:4px;}
+    @media(max-width:860px){.area-inner{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
@@ -167,6 +180,7 @@
     <div class="nav-logo">BW <span>Home Maintenance</span></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
+      <li><a href="#area">Service Area</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
     </ul>
@@ -226,7 +240,7 @@
             <div class="pricing-card-price"><sup>$</sup>150</div>
           </div>
         </div>
-        <div class="pricing-note">Need more than one area done? Combining packages may qualify for a discount. Mention it in your quote request and Brian will work something out with you.</div>
+        <div class="pricing-note">Need more than one area done? Combining packages may qualify for a discount. Mention it in your quote request and we'll work something out with you.</div>
       </div>
     </div>
 
@@ -326,7 +340,7 @@
       <div>
         <div class="section-label">Why BW Home Maintenance</div>
         <h2 class="section-title">Local, reliable, and actually accountable.</h2>
-        <p class="section-body">Brian is your neighbour in Oakpark. When something needs fixing or following up, you know exactly where to find him.</p>
+        <p class="section-body">We live and work in this community. When something needs fixing or following up, you know exactly how to reach us.</p>
         <div class="why-points">
           <div class="why-point"><div class="why-dot"></div><div class="why-point-text"><strong>Community-first mindset</strong><span>We live here too. Your street is our street.</span></div></div>
           <div class="why-point"><div class="why-dot"></div><div class="why-point-text"><strong>Transparent flat pricing</strong><span>What you see is what you pay. No hidden extras.</span></div></div>
@@ -349,9 +363,9 @@
       <div class="contact-info">
         <div class="section-label">Get in touch</div>
         <h2 class="section-title">Ready to get started?</h2>
-        <p class="contact-tagline">Fill out the form and Brian will get back to you directly, usually within a day. No automated responses, no runaround.</p>
+        <p class="contact-tagline">Fill out the form and we'll get back to you directly, usually within a day. No automated responses, no runaround.</p>
         <div class="contact-detail"><div class="contact-icon">&#127968;</div><div><strong>Serving:</strong> Oakpark, Oakville and surrounding streets</div></div>
-        <div class="contact-detail"><div class="contact-icon">&#128100;</div><div><strong>Brian</strong> &mdash; your Oakpark neighbour</div></div>
+        <div class="contact-detail"><div class="contact-icon">&#128100;</div><div><strong>BW Home Maintenance</strong> &mdash; your Oakpark neighbours</div></div>
         <div class="contact-detail"><div class="contact-icon">&#8987;</div><div>Typical response within <strong>24 hours</strong></div></div>
       </div>
       <div class="form-placeholder">
@@ -378,6 +392,8 @@
     </div>
     <ul class="footer-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="#area">Service Area</a></li>
+      <li><a href="#area">Service Area</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
