@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BW Home Maintenance | Oakpark</title>
   <meta name="description" content="Trusted home maintenance services for the Oakpark community. Pressure washing, garage storage solutions, property cleanup, and lawn care." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFhMmI0YSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMTYsNSAyOCwxNiAyNCwxNiAyNCwyNyAxOSwyNyAxOSwyMCAxMywyMCAxMywyNyA4LDI3IDgsMTYgNCwxNiIgZmlsbD0iIzJlNmI0ZiIvPgogIDxyZWN0IHg9IjEzIiB5PSIyMCIgd2lkdGg9IjYiIGhlaWdodD0iNyIgZmlsbD0iIzNhOGE2MyIvPgo8L3N2Zz4=" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
-  <script async src="https://tally.so/widgets/embed.js"></script>
   <style>
     :root{--navy:#1a2b4a;--navy-mid:#243659;--green:#2e6b4f;--green-lt:#3a8a63;--cream:#f7f4ef;--white:#ffffff;--slate:#4a5568;--slate-lt:#8a9ab0;--border:#dde3ec;--shadow:rgba(26,43,74,0.10);--shadow-md:rgba(26,43,74,0.18);}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -43,7 +41,7 @@
     .hero h1 em{font-style:italic;color:var(--green-lt);}
     .hero-sub{font-size:1.1rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:36px;max-width:440px;}
     .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-    .btn-hero{background:var(--green);color:var(--white);padding:15px 34px;border-radius:6px;font-size:1rem;font-weight:600;transition:background .15s,transform .15s;display:inline-block;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;}
+    .btn-hero{background:var(--green);color:var(--white);padding:15px 34px;border-radius:6px;font-size:1rem;font-weight:600;transition:background .15s,transform .15s;display:inline-block;}
     .btn-hero:hover{background:var(--green-lt);transform:translateY(-2px);}
     .btn-hero-ghost{background:transparent;color:rgba(255,255,255,.85);padding:15px 34px;border-radius:6px;font-size:1rem;font-weight:500;border:1.5px solid rgba(255,255,255,.3);transition:border-color .15s,color .15s,transform .15s;display:inline-block;}
     .btn-hero-ghost:hover{border-color:rgba(255,255,255,.7);color:var(--white);transform:translateY(-2px);}
@@ -104,20 +102,6 @@
     .add-card-icon{font-size:2rem;margin-bottom:14px;}
     .add-card h3{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--navy);margin-bottom:10px;}
     .add-card p{font-size:.92rem;color:var(--slate);line-height:1.65;}
-    /* Service Area */
-    .service-area{padding:0 0 80px;}
-    .area-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-    .area-map-placeholder{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px var(--shadow);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed var(--border);color:var(--slate-lt);gap:12px;font-size:.9rem;}
-    .area-map-placeholder svg{opacity:.3;}
-    .area-details{padding-top:8px;}
-    .boundary-list{list-style:none;margin:24px 0;}
-    .boundary-list li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:.95rem;color:var(--slate);}
-    .boundary-list li:last-child{border-bottom:none;}
-    .boundary-dot{width:10px;height:10px;border-radius:50%;background:var(--green);flex-shrink:0;}
-    .boundary-list li strong{color:var(--navy);}
-    .outside-area-note{background:var(--white);border-radius:12px;padding:20px 24px;border-left:4px solid var(--green-lt);box-shadow:0 2px 12px var(--shadow);font-size:.9rem;color:var(--slate);line-height:1.65;margin-top:8px;}
-    .outside-area-note strong{color:var(--navy);display:block;margin-bottom:4px;}
-    /* Why */
     .why{background:var(--navy);padding:80px 0;position:relative;overflow:hidden;}
     .why::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 90% 10%,rgba(46,107,79,.2) 0%,transparent 50%);pointer-events:none;}
     .why-inner{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
@@ -135,7 +119,6 @@
     .why-box:first-child{grid-column:span 2;background:rgba(46,107,79,.2);border-color:rgba(46,107,79,.4);}
     .why-box .wb-num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--green-lt);line-height:1;margin-bottom:4px;}
     .why-box .wb-label{font-size:.85rem;color:rgba(255,255,255,.6);}
-    /* Contact */
     .contact{padding:90px 0;}
     .contact-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;}
     .contact-info{padding-top:8px;}
@@ -143,12 +126,11 @@
     .contact-detail{display:flex;align-items:center;gap:12px;margin-bottom:16px;font-size:.95rem;color:var(--slate);}
     .contact-detail strong{color:var(--navy);}
     .contact-icon{width:38px;height:38px;border-radius:8px;background:rgba(46,107,79,.1);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
-    .tally-box{background:var(--white);border-radius:16px;padding:48px 36px;text-align:center;box-shadow:0 4px 24px var(--shadow);}
-    .tally-box-icon{font-size:2.8rem;margin-bottom:16px;}
-    .tally-box h3{font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--navy);margin-bottom:12px;}
-    .tally-box p{font-size:.95rem;color:var(--slate);max-width:320px;margin:0 auto 28px;line-height:1.7;}
-    .btn-tally{background:var(--green);color:var(--white);padding:16px 38px;border-radius:6px;font-size:1rem;font-weight:600;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .15s,transform .15s;display:inline-block;}
-    .btn-tally:hover{background:var(--green-lt);transform:translateY(-2px);}
+    .form-placeholder{background:var(--white);border:2px dashed var(--border);border-radius:16px;padding:48px 36px;text-align:center;}
+    .form-placeholder-icon{font-size:2.8rem;margin-bottom:16px;}
+    .form-placeholder h3{font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--navy);margin-bottom:10px;}
+    .form-placeholder p{font-size:.9rem;color:var(--slate-lt);max-width:300px;margin:0 auto 24px;line-height:1.6;}
+    .tally-embed-zone{background:#f0f4f8;border-radius:8px;padding:16px;font-family:monospace;font-size:.78rem;color:#8a9ab0;text-align:left;line-height:1.7;}
     footer{background:var(--navy-mid);border-top:3px solid var(--green);padding:40px 24px;}
     .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
     .footer-logo{font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--white);}
@@ -165,7 +147,6 @@
       .why-visual{display:none;}
       .contact-inner{grid-template-columns:1fr;}
       .add-grid{grid-template-columns:1fr;}
-      .area-inner{grid-template-columns:1fr;}
       .nav-links{display:none;}
       .nav-toggle{display:block;}
       .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--navy);padding:20px 24px 28px;gap:18px;border-top:1px solid rgba(255,255,255,.08);}
@@ -186,7 +167,6 @@
     <div class="nav-logo">BW <span>Home Maintenance</span></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
-      <li><a href="#area">Service Area</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
     </ul>
@@ -203,7 +183,7 @@
       <h1>Your <em>neighbour</em> for home maintenance done right.</h1>
       <p class="hero-sub">Pressure washing, garage storage solutions, property cleanup, and ongoing lawn care. All handled locally, by someone who actually lives here.</p>
       <div class="hero-actions">
-        <button class="btn-hero" data-tally-open="rjGkJL" data-tally-emoji-text="&#128075;" data-tally-emoji-animation="wave">Request a Quote</button>
+        <a href="#contact" class="btn-hero">Request a Quote</a>
         <a href="#services" class="btn-hero-ghost">See Services</a>
       </div>
     </div>
@@ -340,40 +320,6 @@
   </div>
 </section>
 
-<section class="service-area" id="area">
-  <div class="container">
-    <div class="section-label">Where we work</div>
-    <h2 class="section-title" style="margin-bottom:8px;">Our primary service area.</h2>
-    <p class="section-body" style="margin-bottom:40px;">BW Home Maintenance primarily serves the Oakpark neighbourhood. The map below shows our coverage boundaries.</p>
-    <div class="area-inner">
-      <div>
-        <!-- MAP PLACEHOLDER: Replace this div with an <img> tag once you have the map image ready -->
-        <!-- e.g. <img src="map.jpg" alt="Oakpark service area map" style="width:100%;border-radius:16px;box-shadow:0 4px 24px var(--shadow);" /> -->
-        <div class="area-map-placeholder">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>Map image coming soon</span>
-          <span style="font-size:.78rem;">(replace placeholder in code)</span>
-        </div>
-      </div>
-      <div class="area-details">
-        <div class="section-label">Neighbourhood boundaries</div>
-        <h3 style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--navy);margin-bottom:6px;">Oakpark, Oakville</h3>
-        <p style="font-size:.92rem;color:var(--slate);margin-bottom:4px;line-height:1.65;">Our primary coverage runs within these streets:</p>
-        <ul class="boundary-list">
-          <li><div class="boundary-dot"></div><div><strong>North:</strong> Taunton Road</div></li>
-          <li><div class="boundary-dot"></div><div><strong>South:</strong> Glen Ashton Drive</div></li>
-          <li><div class="boundary-dot"></div><div><strong>East:</strong> Georgian Drive</div></li>
-          <li><div class="boundary-dot"></div><div><strong>West:</strong> Central Park Drive</div></li>
-        </ul>
-        <div class="outside-area-note">
-          <strong>Outside the area? No problem.</strong>
-          If a neighbour passed along this flyer or you found us another way, reach out anyway. We're happy to provide a quote for nearby streets and will do our best to accommodate.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="why" id="why">
   <div class="container">
     <div class="why-inner">
@@ -403,16 +349,22 @@
       <div class="contact-info">
         <div class="section-label">Get in touch</div>
         <h2 class="section-title">Ready to get started?</h2>
-        <p class="contact-tagline">Click the button and fill out the quick form. Brian will get back to you directly, usually within a day. No automated responses, no runaround.</p>
+        <p class="contact-tagline">Fill out the form and Brian will get back to you directly, usually within a day. No automated responses, no runaround.</p>
         <div class="contact-detail"><div class="contact-icon">&#127968;</div><div><strong>Serving:</strong> Oakpark, Oakville and surrounding streets</div></div>
         <div class="contact-detail"><div class="contact-icon">&#128100;</div><div><strong>Brian</strong> &mdash; your Oakpark neighbour</div></div>
         <div class="contact-detail"><div class="contact-icon">&#8987;</div><div>Typical response within <strong>24 hours</strong></div></div>
       </div>
-      <div class="tally-box">
-        <div class="tally-box-icon">&#128203;</div>
+      <div class="form-placeholder">
+        <div class="form-placeholder-icon">&#128203;</div>
         <h3>Request a Quote</h3>
-        <p>Tell us a bit about what you need and Brian will follow up with details and availability.</p>
-        <button class="btn-tally" data-tally-open="rjGkJL" data-tally-emoji-text="&#128075;" data-tally-emoji-animation="wave">Get Your Free Quote</button>
+        <p>This form will be powered by Tally. Replace this block with your Tally embed code when ready.</p>
+        <div class="tally-embed-zone">
+          &lt;!-- TALLY FORM EMBED --&gt;<br />
+          &lt;!-- Replace this entire .form-placeholder div --&gt;<br />
+          &lt;!-- with your Tally snippet, e.g.: --&gt;<br />
+          &lt;iframe src="https://tally.so/embed/YOUR_ID"<br />
+          &nbsp;&nbsp;width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;
+        </div>
       </div>
     </div>
   </div>
@@ -426,7 +378,6 @@
     </div>
     <ul class="footer-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#area">Service Area</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
